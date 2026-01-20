@@ -1,16 +1,11 @@
 """
-Python Koans - Introduction to Python
-=====================================
+Introduction to Python - Review
+================================
 
 Fill in the blanks to make the tests pass.
 
-Run the tests with:
-    python run_koans.py
-
-Get a hint for the current failing test:
-    python run_koans.py --hint
-
-Your journey begins here...
+Run:  python run_review.py
+Hint: python run_review.py --hint
 """
 
 # =============================================================================
@@ -23,7 +18,7 @@ FILL_ME_IN = "???"
 # PYTHON BASICS - Lists
 # =============================================================================
 
-def koan_01_list_indexing():
+def q01_list_indexing():
     """Access elements in a list by their index."""
     fruits = ['apple', 'banana', 'cherry', 'date']
 
@@ -33,7 +28,7 @@ def koan_01_list_indexing():
     assert first_fruit == 'apple', f"Expected 'apple', got {first_fruit!r}"
 
 
-def koan_02_negative_indexing():
+def q02_negative_indexing():
     """Access elements from the end using negative indices."""
     numbers = [10, 20, 30, 40, 50]
 
@@ -43,7 +38,7 @@ def koan_02_negative_indexing():
     assert last_number == 50, f"Expected 50, got {last_number}"
 
 
-def koan_03_list_slicing():
+def q03_list_slicing():
     """Extract a portion of a list using slicing."""
     letters = ['a', 'b', 'c', 'd', 'e', 'f']
 
@@ -54,7 +49,7 @@ def koan_03_list_slicing():
     assert middle == ['c', 'd'], f"Expected ['c', 'd'], got {middle}"
 
 
-def koan_04_list_append():
+def q04_list_append():
     """Add an element to the end of a list."""
     colors = ['red', 'green']
 
@@ -67,7 +62,7 @@ def koan_04_list_append():
     assert colors == ['red', 'green', 'blue'], f"Expected ['red', 'green', 'blue'], got {colors}"
 
 
-def koan_05_list_comprehension():
+def q05_list_comprehension():
     """Create a new list by transforming each element."""
     numbers = [1, 2, 3, 4, 5]
 
@@ -82,7 +77,7 @@ def koan_05_list_comprehension():
 # PYTHON BASICS - Dictionaries
 # =============================================================================
 
-def koan_06_dict_access():
+def q06_dict_access():
     """Access values in a dictionary by key."""
     person = {'name': 'Alice', 'age': 30, 'city': 'London'}
 
@@ -92,7 +87,7 @@ def koan_06_dict_access():
     assert name == 'Alice', f"Expected 'Alice', got {name!r}"
 
 
-def koan_07_dict_creation():
+def q07_dict_creation():
     """Create a dictionary with key-value pairs."""
 
     # Create a dict where 'language' maps to 'Python'
@@ -106,7 +101,7 @@ def koan_07_dict_creation():
 # PYTHON BASICS - Control Flow
 # =============================================================================
 
-def koan_08_range():
+def q08_range():
     """Understand how range() generates sequences."""
 
     # range(n) generates 0, 1, 2, ... n-1
@@ -116,7 +111,7 @@ def koan_08_range():
     assert result == [0, 1, 2, 3, 4], f"Expected [0, 1, 2, 3, 4], got {result}"
 
 
-def koan_09_membership():
+def q09_membership():
     """Check if an element exists in a collection."""
     vowels = ['a', 'e', 'i', 'o', 'u']
 
@@ -129,7 +124,7 @@ def koan_09_membership():
     assert is_vowel == True, f"Expected True. Make sure keyword is 'in'"
 
 
-def koan_10_tuple_unpacking():
+def q10_tuple_unpacking():
     """Unpack a tuple into multiple variables."""
     coordinates = (10, 20)
 
@@ -148,7 +143,7 @@ def koan_10_tuple_unpacking():
 # NUMPY - Array Creation
 # =============================================================================
 
-def koan_11_numpy_import():
+def q11_numpy_import():
     """Import numpy with its conventional alias."""
 
     # What is the standard alias for numpy?
@@ -159,7 +154,7 @@ def koan_11_numpy_import():
     assert alias == 'np', f"The conventional numpy alias is 'np', not '{alias}'"
 
 
-def koan_12_zeros_array():
+def q12_zeros_array():
     """Create an array filled with zeros."""
     import numpy as np
 
@@ -172,7 +167,7 @@ def koan_12_zeros_array():
     assert arr.shape == (2, 3), f"Expected shape (2, 3), got {arr.shape}"
 
 
-def koan_13_arange():
+def q13_arange():
     """Create an array with a range of values."""
     import numpy as np
 
@@ -185,7 +180,7 @@ def koan_13_arange():
     assert list(arr) == [0, 1, 2, 3, 4, 5], f"Expected [0, 1, 2, 3, 4, 5], got {list(arr)}"
 
 
-def koan_14_linspace():
+def q14_linspace():
     """Create evenly spaced values over an interval."""
     import numpy as np
 
@@ -203,7 +198,7 @@ def koan_14_linspace():
 # NUMPY - Array Properties
 # =============================================================================
 
-def koan_15_array_shape():
+def q15_array_shape():
     """Access the dimensions of an array."""
     import numpy as np
 
@@ -217,7 +212,7 @@ def koan_15_array_shape():
     assert dims == (2, 3), f"Expected (2, 3), got {dims}"
 
 
-def koan_16_array_transpose():
+def q16_array_transpose():
     """Swap rows and columns of a matrix."""
     import numpy as np
 
@@ -235,7 +230,7 @@ def koan_16_array_transpose():
 # NUMPY - Array Operations
 # =============================================================================
 
-def koan_17_matrix_multiply():
+def q17_matrix_multiply():
     """Perform matrix multiplication."""
     import numpy as np
 
@@ -252,7 +247,7 @@ def koan_17_matrix_multiply():
     assert (result == expected).all(), f"Expected matrix product, got {result}"
 
 
-def koan_18_array_flip():
+def q18_array_flip():
     """Reverse an array along an axis."""
     import numpy as np
 
@@ -267,7 +262,7 @@ def koan_18_array_flip():
     assert list(reversed_arr) == [5, 4, 3, 2, 1], f"Expected [5, 4, 3, 2, 1], got {list(reversed_arr)}"
 
 
-def koan_19_random_seed():
+def q19_random_seed():
     """Set the random seed for reproducibility."""
     import numpy as np
 
@@ -283,7 +278,7 @@ def koan_19_random_seed():
     assert first == second, f"Random seed not set. The function is 'seed'."
 
 
-def koan_20_argmax():
+def q20_argmax():
     """Find the index of the maximum value."""
     import numpy as np
 
@@ -301,7 +296,7 @@ def koan_20_argmax():
 # MATPLOTLIB
 # =============================================================================
 
-def koan_21_plot_import():
+def q21_plot_import():
     """Import matplotlib.pyplot with its conventional alias."""
 
     # What is the standard alias for matplotlib.pyplot?
@@ -310,7 +305,7 @@ def koan_21_plot_import():
     assert alias == 'plt', f"The conventional alias is 'plt', not '{alias}'"
 
 
-def koan_22_imshow_function():
+def q22_imshow_function():
     """Display an image using the correct function."""
 
     # What function displays images in matplotlib?
@@ -319,7 +314,7 @@ def koan_22_imshow_function():
     assert func_name == 'imshow', f"Expected 'imshow', got '{func_name}'"
 
 
-def koan_23_grayscale_cmap():
+def q23_grayscale_cmap():
     """Display a grayscale image without false colors."""
 
     # What parameter name specifies the colormap?
@@ -329,7 +324,7 @@ def koan_23_grayscale_cmap():
     assert param_name == 'cmap', f"Expected 'cmap', got '{param_name}'"
 
 
-def koan_24_subplots():
+def q24_subplots():
     """Create a grid of subplots."""
     import matplotlib
     matplotlib.use('Agg')  # Non-interactive backend
@@ -345,7 +340,7 @@ def koan_24_subplots():
     plt.close(fig)
 
 
-def koan_25_figsize():
+def q25_figsize():
     """Create a figure with a specific size."""
 
     # What parameter name specifies figure dimensions?
@@ -356,33 +351,33 @@ def koan_25_figsize():
 
 
 # =============================================================================
-# List of all koans in order
+# All questions
 # =============================================================================
 
-ALL_KOANS = [
-    koan_01_list_indexing,
-    koan_02_negative_indexing,
-    koan_03_list_slicing,
-    koan_04_list_append,
-    koan_05_list_comprehension,
-    koan_06_dict_access,
-    koan_07_dict_creation,
-    koan_08_range,
-    koan_09_membership,
-    koan_10_tuple_unpacking,
-    koan_11_numpy_import,
-    koan_12_zeros_array,
-    koan_13_arange,
-    koan_14_linspace,
-    koan_15_array_shape,
-    koan_16_array_transpose,
-    koan_17_matrix_multiply,
-    koan_18_array_flip,
-    koan_19_random_seed,
-    koan_20_argmax,
-    koan_21_plot_import,
-    koan_22_imshow_function,
-    koan_23_grayscale_cmap,
-    koan_24_subplots,
-    koan_25_figsize,
+ALL_QUESTIONS = [
+    q01_list_indexing,
+    q02_negative_indexing,
+    q03_list_slicing,
+    q04_list_append,
+    q05_list_comprehension,
+    q06_dict_access,
+    q07_dict_creation,
+    q08_range,
+    q09_membership,
+    q10_tuple_unpacking,
+    q11_numpy_import,
+    q12_zeros_array,
+    q13_arange,
+    q14_linspace,
+    q15_array_shape,
+    q16_array_transpose,
+    q17_matrix_multiply,
+    q18_array_flip,
+    q19_random_seed,
+    q20_argmax,
+    q21_plot_import,
+    q22_imshow_function,
+    q23_grayscale_cmap,
+    q24_subplots,
+    q25_figsize,
 ]
